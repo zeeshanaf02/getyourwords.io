@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index-styles.css">
+    <title>Welcome Page</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container" id="welcomeContainer">
+        <h1 id="welcomeMessage">Yo Raccoon wanna read some words of wisdom some are my words too </h1>
+        <div class="options">
+            <button id="yesButton" class="button" onclick="selectOption('yes')">Yes</button>
+            <button id="noButton" class="button" onclick="selectOption('no')">No</button>
+        </div>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/ZkwSxuckDvf7q/giphy.gif" alt="Animated GIF">
+        </div>
+    </div>
+
+    <script>
+        function selectOption(option) {
+            if (option === 'yes') {
+                window.location.href = 'random-words.html';
+            } else {
+                window.location.href = 'bye-bye.html';
+            }
+        }
+    </script>
+</body>
+</html>
