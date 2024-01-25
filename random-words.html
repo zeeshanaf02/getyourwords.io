@@ -56,6 +56,11 @@
             const randomIndex = Math.floor(Math.random() * words.length);
             document.getElementById('randomWord').innerText = `"${words[randomIndex]}"`;
         }
+        setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 30000);
+        }
+
 
         // Display a random word initially
         displayRandomWord();
